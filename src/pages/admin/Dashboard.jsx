@@ -28,6 +28,7 @@ import CTemplateType from "../../components/admin/clarificationTemp/CTemplateTyp
 import CTemplate from "../../components/admin/clarificationTemp/CTemplate";
 import QTemplate from "../../components/admin/questionTemp/QTemplate";
 import QTemplateType from "../../components/admin/questionTemp/QTemplateType";
+import { IoClose } from "react-icons/io5";
 
 export default function Dashboard() {
   const { pathname } = useLocation();
@@ -70,7 +71,7 @@ export default function Dashboard() {
             onClick={() => setOpenSidebar(!openSidebar)}
             className="p-2 bg-slate-100 rounded-full shadow-md"
           >
-            <FiMenu size={20} />
+            {openSidebar ? <IoClose size={20} /> : <FiMenu size={20} />}
           </div>
         </div>
         {openSidebar && (

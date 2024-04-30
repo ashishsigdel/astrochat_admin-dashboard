@@ -90,7 +90,6 @@ export default function Sidebar({ setSidebarOpen }) {
               <Link
                 to="/admin/staff-management/moderator"
                 onClick={handleTitleClick}
-                onClick={handleTitleClick}
                 className={`flex items-center gap-2 p-1 px-4 cursor-pointer ${isActivelight(
                   "/admin/staff-management/moderator"
                 )}`}
